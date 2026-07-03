@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tackled — a to-do app that never punishes a slow day</title>
+<meta name="description" content="Tackled is a tiny, fast Mac app for scattered minds. Capture anything in a second, focus on one thing at a time, and build momentum that never resets — no streaks, no guilt.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-row">
+    <a href="#" class="brand"><span class="bolt">⚡</span>Tackled</a>
+    <div class="nav-links">
+      <a href="#features" class="hide-mobile">Features</a>
+      <a href="#how-it-works" class="hide-mobile">How it works</a>
+      <a href="privacy.html" class="hide-mobile">Privacy</a>
+      <!-- TODO(download-link): point at the real DMG / App Store URL once Tackled ships -->
+      <a href="#" class="btn btn-primary btn-sm">Download for Mac</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">A daily to-do app for scattered minds</div>
+      <h1>Some days you do one thing.<br>That still <span class="accent">counts.</span></h1>
+      <p class="lede">Tackled is a tiny, fast Mac app built to catch what's in your head before it slips away — and it never punishes you for a slow day. No streaks to break. No guilt for adding a task. Just momentum, and momentum only goes up.</p>
+      <div class="cta-row">
+        <!-- TODO(download-link): point at the real DMG / App Store URL once Tackled ships -->
+        <a href="#" class="btn btn-primary">Download for Mac — it's free</a>
+        <a href="#how-it-works" class="cta-more">See how it works ↓</a>
+      </div>
+      <p class="fine-print">macOS 11+ · Runs entirely on your Mac · No account, no login</p>
+    </div>
+
+    <div>
+      <div class="demo-card" id="demoCard">
+        <div class="demo-top">
+          <span class="demo-day" id="demoDay">Wednesday</span>
+        </div>
+        <div class="demo-head">
+          <span class="demo-label">Momentum</span>
+          <span class="demo-count" id="demoCount"><b>0</b> of 0 done</span>
+        </div>
+        <div class="demo-cells" id="demoCells"></div>
+        <div class="demo-note" id="demoNote"><span class="plus">＋</span><span id="demoNoteText">2 more tasks added to today's list</span></div>
+      </div>
+      <p class="demo-caption">The real momentum meter, from the real app. Watch it — it only ever fills.</p>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="not-streaks">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Not another streak app.</h2>
+      <p>Streaks break. And when they break, most apps make you feel like you failed. Tackled doesn't have streaks — it has momentum, and adding a task never costs you progress.</p>
+    </div>
+    <div class="compare">
+      <div class="compare-col bad">
+        <h3>Other to-do apps</h3>
+        <ul class="compare-list">
+          <li><span class="mark">✕</span>A streak that resets to zero the moment you miss a day</li>
+          <li><span class="mark">✕</span>Your progress bar drops every time you add a task</li>
+          <li><span class="mark">✕</span>Time tracking that feels like surveillance</li>
+          <li><span class="mark">✕</span>One inbox for tasks and every stray thought</li>
+        </ul>
+      </div>
+      <div class="compare-col good">
+        <h3>Tackled</h3>
+        <ul class="compare-list">
+          <li><span class="mark">✓</span>Momentum that never retreats — no streak to lose</li>
+          <li><span class="mark">✓</span>Adding a task never shrinks what you've already done</li>
+          <li><span class="mark">✓</span>An optional focus timer — nothing ever logged</li>
+          <li><span class="mark">✓</span>Brain farts 💭 — a separate home for stray thoughts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Built for how your brain actually works</h2>
+      <p>Four small tools, each doing exactly one job.</p>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <span class="ico">⚡</span>
+        <h3>Capture anywhere</h3>
+        <p>⌥Space opens a quick-capture card over whatever you're doing. Type it, hit enter, forget it — Tackled remembers so you don't have to.</p>
+        <span class="tag">⌥ SPACE</span>
+      </div>
+      <div class="feature">
+        <span class="ico">🎯</span>
+        <h3>Focus mode</h3>
+        <p>One task, full screen, nothing else. It opens on the task you've been avoiding longest — restart what you're avoiding.</p>
+      </div>
+      <div class="feature">
+        <span class="ico">💭</span>
+        <h3>Brain farts</h3>
+        <p>Stray thoughts aren't tasks. Park them in their own inbox, search them later, and get back to what you were doing.</p>
+      </div>
+      <div class="feature">
+        <span class="ico">🌙</span>
+        <h3>Calm mode</h3>
+        <p>Tackled celebrates wins — confetti, sound, a little sparkle. If that's not what you need today, dial it back with one tap.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how-it-works">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>A day, tackled</h2>
+      <p>The actual shape of using it, start to finish.</p>
+    </div>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-num">01</div>
+        <h3>Capture</h3>
+        <p>⌥Space, type, hit enter. It's on today's list before the thought can slip away.</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-num">02</div>
+        <h3>Focus</h3>
+        <p>Pick one thing, or let Tackled pick for you. Everything else disappears.</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-num">03</div>
+        <h3>Tackle it</h3>
+        <p>Check it off. The momentum meter fills in — it never asks you to explain the rest of the list.</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-num">04</div>
+        <h3>Tomorrow</h3>
+        <p>Unfinished things wait for you, no guilt attached. Start again whenever you're ready.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closing section-alt" id="download">
+  <div class="wrap">
+    <h2>Give your brain somewhere to put things down.</h2>
+    <p>Free, native, and yours — no account, no server, no catch.</p>
+    <!-- TODO(download-link): point at the real DMG / App Store URL once Tackled ships -->
+    <a href="#" class="btn btn-primary">Download for Mac — it's free</a>
+    <p class="fine-print" style="margin-top:16px">macOS 11 or later</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <p class="foot-note">Tackled runs entirely on your Mac. No account, no login, no server — your data never leaves your machine.</p>
+    <div class="foot-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:lewisfidlers@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
