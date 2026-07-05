@@ -45,5 +45,5 @@ up to 24h).
 
 ## TODO
 
-- [ ] Point the "Download for Mac" buttons (index.html, privacy.html,
-      support.html) at the real download URL once Tackled ships — currently `#`.
+- [ ] Swap the "Coming soon" / notify-me mailto CTAs (index.html, privacy.html,
+      support.html) for the real App Store URL once Tackled ships.

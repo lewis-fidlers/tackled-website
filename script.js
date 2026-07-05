@@ -12,7 +12,7 @@
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  const GOAL = 4;
+  const GOAL = 3;
   const cells = [];
   for (let i = 0; i < GOAL; i++) {
     const c = document.createElement("div");
