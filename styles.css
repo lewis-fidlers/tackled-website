@@ -97,41 +97,12 @@ h1,h2,h3,.display{
 .cta-more:hover{color:var(--ink);border-color:var(--ink-soft)}
 .fine-print{font-size:13px;color:var(--muted)}
 
-/* ---------- demo meter (signature element) ---------- */
-.demo-card{
+/* ---------- demo video (signature element — real screen recording) ---------- */
+.demo-video-wrap{
   background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-lg);
-  border:1px solid var(--line);padding:26px 26px 22px;
-  transition:box-shadow .4s, transform .4s cubic-bezier(.2,.8,.2,1);
+  border:1px solid var(--line);overflow:hidden;line-height:0;max-width:360px;margin:0 auto;
 }
-.demo-card.maxed{box-shadow:0 0 0 2px var(--teal), 0 18px 34px rgba(20,184,166,.22)}
-.demo-card.pulse{animation:demoPulse .7s cubic-bezier(.2,.9,.3,1)}
-@keyframes demoPulse{0%{transform:scale(1)}40%{transform:scale(1.02)}100%{transform:scale(1)}}
-
-.demo-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
-.demo-day{font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--muted)}
-.demo-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-.demo-label{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.demo-count{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:16px;color:var(--ink-soft)}
-.demo-count b{color:var(--ink);font-size:19px}
-
-.demo-cells{display:flex;gap:7px;margin-bottom:16px}
-.demo-cell{
-  flex:1;height:16px;border-radius:7px;background:rgba(27,26,46,.07);
-  position:relative;overflow:hidden;
-  transition:background .5s ease, transform .35s cubic-bezier(.2,.9,.3,1);
-}
-.demo-cell.on{background:linear-gradient(180deg,#FF7A6B,var(--coral));transform:translateY(-1px)}
-.demo-cell.on.mid{background:linear-gradient(180deg,#FFD56B,var(--gold))}
-.demo-cell.on.high{background:linear-gradient(180deg,#3FE0CE,var(--teal))}
-
-.demo-note{
-  display:flex;align-items:center;gap:8px;
-  font-size:13.5px;color:var(--ink-soft);font-weight:500;
-  height:20px;opacity:0;transform:translateY(4px);
-  transition:opacity .35s ease, transform .35s ease;
-}
-.demo-note.show{opacity:1;transform:translateY(0)}
-.demo-note .plus{color:var(--teal);font-weight:700}
+.demo-video{display:block;width:100%;height:auto}
 
 .demo-caption{margin-top:16px;font-size:13px;color:var(--muted);text-align:center}
 
@@ -176,6 +147,11 @@ h1,h2,h3,.display{
   display:inline-block;margin-top:12px;font-size:11.5px;font-weight:700;letter-spacing:.04em;
   color:var(--coral-dark);background:rgba(255,94,91,.1);padding:3px 9px;border-radius:999px;
 }
+.feature-video-wrap{
+  margin-top:14px;border-radius:var(--radius-sm);overflow:hidden;
+  border:1px solid var(--line);line-height:0;
+}
+.feature-video{display:block;width:100%;height:auto}
 
 /* ---------- flow (real chronology → numbers justified) ---------- */
 .flow{display:flex;gap:0;align-items:stretch;max-width:960px;margin:0 auto}
